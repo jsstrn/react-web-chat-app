@@ -1,3 +1,3 @@
-# ff-chat-app
+# react-web-chat-app
 
-A starter kit for building a socket.io based chat app with your frontend framwork of choice.
+A web chat app built with Socket.io and ReactJS.
