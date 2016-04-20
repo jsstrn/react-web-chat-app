@@ -3,10 +3,10 @@ const React = require('react')
 const FormSection = React.createClass({
   render: function () {
     return (
-      <section id='join' className='well hidden'>
-        <form id='JoinForm' className='form-inline text-right'>
+      <section id='join' className='well'>
+        <form id='JoinForm' className='form-inline text-center'>
             <fieldset>
-              <input type='text' className='form-control' placeholder='Your name' />
+              <input type='text' className='form-control' placeholder='Your name' required autoFocus />
               <button id='sendJoin' className='btn btn-success' disabled>Join</button>
             </fieldset>
         </form>

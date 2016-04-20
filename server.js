@@ -19,7 +19,7 @@ server.listen(port, () => {
 })
 
 // serve static files with express
-app.use(express.static('./public'))
+app.use(express.static('./dist'))
 
 // listen for a socket io connection event
 io.on('connection', (socket) => {

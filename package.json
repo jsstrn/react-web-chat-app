@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "dev-start": "nodemon server.js",
-    "build": "browserify -t [ babelify ] ./src/*.js -o ./public/js/bundle.js",
-    "dev-build": "watchify -t [ babelify ] ./src/*.js -o ./public/js/bundle.js -d",
+    "build": "browserify -t [ babelify ] ./src/*.js -o ./dist/js/bundle.js",
+    "dev-build": "watchify -t [ babelify ] ./src/*.js -o ./dist/js/bundle.js -d",
     "dev": "npm run dev-build & npm run dev-start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
