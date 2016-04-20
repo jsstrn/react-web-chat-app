@@ -1,4 +1,4 @@
-const React = require('react')
+import React from 'react'
 
 const MainSection = React.createClass({
   render: function () {

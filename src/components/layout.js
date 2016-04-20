@@ -1,7 +1,7 @@
-const React = require('react')
-const HeadingSection = require('./heading')
-const FormSection = require('./form')
-const MainSection = require('./main')
+import React from 'react'
+import HeadingSection from './heading'
+import FormSection from './form'
+import MainSection from './main'
 
 const Layout = React.createClass({
   propTypes: {

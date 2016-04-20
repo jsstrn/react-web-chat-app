@@ -1,7 +1,7 @@
-const io = require('socket.io-client')
-const React = require('react')
-const ReactDOM = require('react-dom')
-const Layout = require('./components/layout')
+import io from 'socket.io-client'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Layout from './components/layout'
 
 function render (status) {
   console.log('Rendering React Components ' + status)
