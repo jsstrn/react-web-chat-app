@@ -1,11 +1,15 @@
 {
-  "name": "ff-chat-app",
+  "name": "react-web-chat-app",
   "version": "1.0.0",
   "description": "A starter kit for building a socket.io based chat app with a frontend framwork",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev-start": "nodemon server.js",
+    "build": "browserify -t [ babelify ] ./public/js/client.js -o ./public/js/bundle.js",
+    "dev-build": "watchify -t [ babelify ] ./public/js/client.js -o ./public/js/bundle.js",
+    "dev": "npm run dev-build & npm run dev-start",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -21,7 +25,13 @@
   },
   "homepage": "https://github.com/jeremiahalex/ff-chat-app#readme",
   "dependencies": {
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
     "express": "^4.13.4",
-    "socket.io": "^1.4.5"
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "socket.io": "^1.4.5",
+    "watchify": "^3.7.0"
   }
 }
